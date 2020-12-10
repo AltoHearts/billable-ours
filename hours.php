@@ -12,7 +12,7 @@ if(isset($_POST['hours'])){
     
     $pay = $hours * $rate;
     
-    echo '<p>You input <b>' . $hours . '</b> hours at a rate of <b>$' . $hours . '</b> and your pay is <b>$' . $pay . '</b></p>
+    echo '<p>You input <b>' . $hours . '</b> hours at a rate of <b>$' . $rate . '</b> and your pay is <b>$' . $pay . '</b></p>
     <p><a href="">Enter More Hours</a></p>';
     
     
