@@ -17,4 +17,4 @@ class HoursForm extends WebTestCase {
 		$this->assertResponse(200);
 		$this->assertText("You input 2 hours at a rate of $2 and your pay is $100");
 	}
-	
+}
