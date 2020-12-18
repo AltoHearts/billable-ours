@@ -33,12 +33,12 @@ class HoursForm extends WebTestCase {
 		$this->get(VIRTUAL_PATH . '/hours.php');
 		$this->assertResponse(200);
 
-    		$this->setField("hours", "0");
-		$this->setField("rate", "");
+    		$this->setField("hours", "two");
+		$this->setField("rate", "fifty");
 		$this->clickSubmit("Show Pay");
 
 		$this->assertResponse(200);
-		$this->assertText("You cannot put 0 in for the hours");
+		$this->assertText("You must enter numerical values");
 		}
 	
 }
