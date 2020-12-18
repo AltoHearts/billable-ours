@@ -14,15 +14,8 @@ if(isset($_POST['hours'])){
     
     echo '<p>You input <b>' . $hours . '</b> hours at a rate of <b>$' . $rate . '</b> and your pay is <b>$' . $pay . '</b></p>
     <p><a href="">Enter More Hours</a></p>';
-    
-    
-}if ($hours == 0 ){ 
-	
-	echo 'this is a test'
-
-
 }
-
+    
 
 else{
    echo '
