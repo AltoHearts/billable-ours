@@ -29,16 +29,16 @@ class HoursForm extends WebTestCase {
 		$this->assertResponse(200);
 		$this->assertText("You cannot put 0 in for the rate");
 		}
-	function testEmpty() {
+	function testZeroHours() {
 		$this->get(VIRTUAL_PATH . '/hours.php');
 		$this->assertResponse(200);
 
-    		$this->setField("hours", "");
+    		$this->setField("hours", "0");
 		$this->setField("rate", "");
 		$this->clickSubmit("Show Pay");
 
 		$this->assertResponse(200);
-		$this->assertText("you cannot leave feilds blank");
+		$this->assertText("You cannot put 0 in for the hours");
 		}
 	
 }
