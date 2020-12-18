@@ -16,7 +16,15 @@ if(isset($_POST['hours'])){
     <p><a href="">Enter More Hours</a></p>';
     
     
-}else{
+}if ($hours == 0 ){ 
+	
+	echo 'this is a test'
+
+
+}
+
+
+else{
    echo '
    <h3>Please enter your billable hours and hourly rate</h3>
    <div class="row">
