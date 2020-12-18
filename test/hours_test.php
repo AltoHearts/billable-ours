@@ -29,7 +29,7 @@ class HoursForm extends WebTestCase {
 		$this->assertResponse(200);
 		$this->assertText("You cannot put 0 in for the rate");
 		}
-	function testZeroRate() {
+	function testEmpty() {
 		$this->get(VIRTUAL_PATH . '/hours.php');
 		$this->assertResponse(200);
 
